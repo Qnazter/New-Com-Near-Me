@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Jolly Lodger', cursive;
+      background: linear-gradient(to right, #ff8ae2, #72f6ff);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .homepage-container {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 40px;
+      border-radius: 30px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #ffef5f;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .nav-buttons a {
+      display: block;
+      margin: 10px auto;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      font-family: inherit;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.2s;
+      width: 80%;
+    }
+
+    .nav-buttons a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #fff;
+    }
+
+    .btn-register { background-color: #ff61b6; }
+    .btn-login { background-color: #3da5f4; }
+    .btn-profile { background-color: #52cf8c; }
+
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="homepage-container">
+    <h1>Welcome!</h1>
+    <p>Join the adventure with us and explore your best choice.</p>
+
+    <div class="nav-buttons">
+      <a href="register.html" class="btn-register">🚀 Register</a>
+      <a href="login.html" class="btn-login">🔐 Login</a>
+      <a href="profile.html" class="btn-profile">👤 View Profile</a>
+    </div>
+
+    <footer>© 2025 Pannarat Wattanakraimet. All rights reserved.</footer>
+  </div>
+</body>
+</html>
