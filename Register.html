@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Jolly Lodger', cursive;
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .register-container {
+      width: 360px;
+      background-color: #000;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .form-box {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-family: inherit;
+    }
+
+    input[type="email"] {
+      background-color: #3da5f4;
+      color: #000;
+    }
+
+    input[type="tel"] {
+      background-color: #e9ff75;
+      color: #000;
+    }
+
+    input[type="password"] {
+      background-color: #c95192;
+      color: #000;
+    }
+
+    input[name="confirm"] {
+      background-color: #b16edc;
+      color: #000;
+    }
+
+    .submit-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .submit-container .star {
+      position: absolute;
+      color: yellow;
+      font-size: 32px;
+    }
+
+    .star.left {
+      left: -25px;
+      top: -10px;
+    }
+
+    .star.right {
+      right: -25px;
+      bottom: -10px;
+    }
+
+    button.submit-btn {
+      background-color: #52cf8c;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 6px;
+      font-size: 16px;
+      color: white;
+      font-family: inherit;
+      margin-bottom: 15px;
+    }
+
+    .login-text {
+      margin-top: 15px;
+    }
+
+    .login-btn {
+      margin-top: 10px;
+      background-color: #d758b8;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 20px;
+      color: white;
+      font-size: 16px;
+      font-family: inherit;
+    }
+
+    .footer-box {
+      background-color: #f5f5f5;
+      color: black;
+      padding: 20px;
+      border-top-left-radius: 100px;
+      text-align: right;
+    }
+
+    .tag {
+      background-color: red;
+      color: white;
+      font-size: 14px;
+      padding: 2px 8px;
+      border-radius: 8px;
+      transform: rotate(-10deg);
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <div class="form-box">
+      <h2>Register</h2>
+      <form>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required>
+
+        <label for="tel">TEL.</label>
+        <input type="tel" id="tel" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+
+        <label for="confirm">Confirm Password</label>
+        <input type="password" name="confirm" id="confirm" required>
+
+        <div class="submit-container">
+          <span class="star left">★</span>
+          <a href="profile.html" class="submit-btn" style="display: inline-block; text-decoration: none; background-color: #52cf8c; border: none; padding: 12px 30px; border-radius: 6px; font-size: 16px; color: white; font-family: inherit;">Submit</a>
+          <span class="star right">★</span>
+        </div>
+
+        <div class="login-text">
+          <p>Already join us ??</p>
+          <a href="Login.html" class="login-btn" style="display: inline-block; text-decoration: none; text-align: center;">Login</a>
+        </div>
+      </form>
+    </div>
+    <div class="footer-box"></div>
+  </div>
+</body>
+</html>

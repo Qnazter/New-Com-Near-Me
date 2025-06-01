@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product List</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: #000;
+  color: white;
+}
+
+.product-page {
+  max-width: 450px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.back-button {
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.category-btn {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.special-deals {
+  color: red;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.product-card {
+  background: #111;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 12px;
+  margin: 8px 0;
+  color: white;
+}
+
+.price-new {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
+}
+
+.price-old {
+  color: #999;
+  font-size: 12px;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+  </style>
+</head>
+<body>
+  <div class="product-page">
+    <button class="back-button" onclick="window.location.href='profile.html'">&#8592;</button>
+    <div class="header">
+      <button class="category-btn">🗂 Category</button>
+      <h1>Product</h1>
+    </div>
+
+    <p class="special-deals">Special deals</p>
+
+    <div class="product-grid">
+      <div class="product-card" onclick="window.location.href='cart.html'">
+        <img src="https://www.jib.co.th/img_master/product/original/20240304112006_65699_287_1.jpg" alt="Notebook MSI" />
+        <h3>NOTEBOOK MSI THIN 15 B12UC-246TH (COSMOS GRAY)</h3>
+        <p class="price-new">19,990.00</p>
+        <p class="price-old">25,990.00</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://img.lazcdn.com/g/p/296cd4d18f00616411f4ac7665f9d98a.jpg_720x720q80.jpg" alt="HP Victus" />
+        <h3>NOTEBOOK HP VICTUS 15-FA1093TX (MICA SILVER)</h3>
+        <p class="price-new">18,990.00</p>
+        <p class="price-old">24,990.00</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://ihcupload.s3.ap-southeast-1.amazonaws.com/img/product/products56637_800.jpg" alt="Notebook MSI 2Y" />
+        <h3>NOTEBOOK MSI THIN 15 B13UCX-247TH (COSMOS GRAY)</h3>
+        <p class="price-new">19,990.00</p>
+        <p class="price-old">28,990.00</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://www.jib.co.th/img_master/product/original/20240228155100_65647_287_1.jpg" alt="Monitor AOC" />
+        <h3>MONITOR AOC 24G2/67 - 23.8 IPS FHD 180Hz (3Y)</h3>
+        <p class="price-new">3,690.00</p>
+        <p class="price-old">3,890.00</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://filebroker-cdn.lazada.co.th/kf/S59036db64d544dd693a15372064d7b11i.jpg" alt="Cooler Master 27" />
+        <h3>MONITOR COOLER MASTER GM1-C24F-C - 27 IPS FHD 240Hz (3Y)</h3>
+        <p class="price-new">3,750.00</p>
+        <p class="price-old">3,990.00</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://down-th.img.susercontent.com/file/th-11134207-7rasc-m3orvys8sbc734" alt="Cooler Master 24" />
+        <h3>MONITOR DAHUA DHI-LM25-E231B - 24.5 IPS FHD 180Hz (3Y)</h3>
+        <p class="price-new">5,490.00</p>
+        <p class="price-old">5,990.00</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.FDAgq-9V9_-qYDWEwrdjyQHaHa?rs=1&pid=ImgDetMain" alt="ASUS RTX 3060 OC" />
+        <h3>ASUS TUF GAMING GEFORCE RTX 3060 OC EDITION - 12GB DDR6 (TUF-RTX3060-O12G-GAMING)</h3>
+        <p class="price-new">13,990.00</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.pd1p1lPgSGEXtLa43JctUQHaHa?rs=1&pid=ImgDetMain" alt="Gigabyte 4070" />
+        <h3>GIGABYTE GEFORCE RTX 4070 EAGLE OC 12G - 12GB GDDR6X</h3>
+        <p class="price-new">25,900.00</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.Ykr-UUTThgxa0yN_LO70zgHaHa?w=185&h=185&c=7&r=0&o=5&pid=1.7" alt="ASUS RTX 3060 DUAL" />
+        <h3>ASUS TUF GAMING GEFORCE RTX 3060 OC EDITION - 12GB DDR6 (TUF-RTX3060-O12G-GAMING)</h3>
+        <p class="price-new">9,200.00</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.IwVDmv6VPYH1b6thU-i63wHaFj?w=230&h=180&c=7&r=0&o=5&pid=1.7" alt="Palit RTX 5070" />
+        <h3>VGA PALIT GEFORCE RTX 5070 GAMING PRO - 12GB GDDR7 (NE5700S019P2-1020G)</h3>
+        <p class="price-new">25,490.00</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.-5sMUi8yJuAbz9Jku9-KFwHaHa?w=206&h=206&c=7&r=0&o=5&pid=1.7" alt="PowerColor 6950 XT" />
+        <h3>VGA POWERCOLOR FIGHTER RADEON RX 6950 XT - 16GB GDDR6</h3>
+        <p class="price-new">14,800.00</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://cdn.mwave.com.au/images/400/zotac_gaming_geforce_rtx_4060_twin_edge_oc_white_8gb_video_card_ac69888_18193.jpg" alt="Galax RTX 5090" />
+        <h3>VGA ZOTAC GAMING GEFORCE RTX 5090 - WHITE EDITION 32GB GDDR7</h3>
+        <p class="price-new">4,600.00</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

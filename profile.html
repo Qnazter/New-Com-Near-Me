@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: #66e087;
+}
+
+.profile-container {
+  max-width: 400px;
+  margin: auto;
+  background: #000;
+  color: white;
+  border-radius: 30px 30px 0 0;
+  padding: 20px;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+.profile-header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid white;
+}
+
+.settings-icon {
+  position: absolute;
+  top: 190px;
+  right: 120px;
+  background: #d44fff;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.balance-section {
+  background: #50aaff;
+  color: #000;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.add-money {
+  background: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.menu .menu-item {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.menu-item.pink { background: #e680ff; }
+.menu-item.yellow { background: #ffef5f; }
+.menu-item.green { background: #90ee90; }
+.menu-item.blue { background: #87cefa; }
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-size: 24px;
+  background: black;
+}
+
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <button class="back-button" onclick="window.location.href='login.html'">&#8592;</button>
+    <div class="profile-header">
+      <img src="https://th.bing.com/th/id/OIP.YRO-qmF02SU1plnw0KYLjAHaE8?rs=1&pid=ImgDetMain" alt="Profile" class="profile-img" />
+      <div class="settings-icon">⚙️</div>
+      <h2>Lylar</h2>
+      <p>lylarkim@gmail.com</p>
+    </div>
+    <div class="balance-section">
+      <p>Your Balance</p>
+      <h3>$3,455,420</h3>
+      <button class="add-money">+ Add money</button>
+    </div>
+    <div class="menu">
+      <button class="menu-item pink" onclick="window.location.href='profile.html'">👤 account</button>
+      <button class="menu-item yellow">📍 address</button>
+      <button class="menu-item green" onclick="window.location.href='cart.html'">🛒 purchase history</button>
+      <button class="menu-item blue" onclick="window.location.href='support.html'">💬 help & support</button>
+    </div>
+    <div class="bottom-nav">
+      <div class="bottom-nav">
+        <span onclick="window.location.href='Homepage.html'">🏠</span>
+        <span onclick="window.location.href='cart.html'">❤️</span>
+        <span onclick="window.location.href='product-list.html'">🔍</span>
+        <span onclick="window.location.href='profile.html'">👤</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

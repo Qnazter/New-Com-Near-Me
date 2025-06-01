@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cart</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: black;
+  color: white;
+}
+
+.cart-container {
+  max-width: 450px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.cart-title {
+  background: #69b7ff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 24px;
+  margin: 40px 0 20px;
+}
+
+.product-box {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.product-box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+}
+
+.price-section {
+  margin-top: 5px;
+}
+
+.price-new {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.price-old {
+  color: red;
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.price-label {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.price-value {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 5px 0 30px;
+}
+
+.next-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <div class="cart-container">
+    <button class="back-btn" onclick="window.location.href='product-list.html'">&#8592;</button>
+    <h1 class="cart-title">⭐ My Cart ⭐</h1>
+
+    <div class="product-box">
+      <img src="https://www.jib.co.th/img_master/product/original/20240304112006_65699_287_1.jpg" alt="Notebook MSI">
+      <p class="product-name">
+        NOTEBOOK MSI THIN 15 B13UCX-247TH (COSMOS GRAY) (2Y)
+      </p>
+      <div class="price-section">
+        <span class="price-new">19,990.00</span>
+        <span class="price-old">28,990.00</span>
+      </div>
+    </div>
+
+    <div class="price-label">Price</div>
+
+    <div class="price-value">19,990.00</div>
+
+    <button class="next-btn" onclick="window.location.href='checkout.html'">next</button>
+  </div>
+</body>
+</html>
